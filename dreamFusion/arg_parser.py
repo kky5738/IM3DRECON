@@ -69,7 +69,7 @@ class ArgParser():
         lambda_depth=0.1,
         lambda_2d_normal_smooth=0.0,
         O=None,
-        O2=None
+        O2=True
     ) -> None:
         
         self.image = image
