@@ -69,7 +69,13 @@ class ArgParser():
         lambda_depth=0.1,
         lambda_2d_normal_smooth=0.0,
         O=None,
-        O2=True
+        O2=True,
+        text=None,
+        cuda_ray=None,
+        taichi_ray=None,
+        gui=None,
+        H=800,
+        W=800
     ) -> None:
         
         self.image = image
@@ -141,3 +147,9 @@ class ArgParser():
         self.lambda_2d_normal_smooth=lambda_2d_normal_smooth
         self.O=O
         self.O2=O2
+        self.text=text
+        self.cuda_ray=cuda_ray
+        self.taichi_ray=taichi_ray
+        self.gui=gui
+        self.H=H
+        self.W=W
