@@ -6,11 +6,11 @@ from pathlib import Path
 import numpy as np
 import torch
 
-# custom pytorch dataset class
+# custom pytorch 데이터셋 클래스
 from nerf.provider_image import NeRFDataset as ImageOnlyNeRFDataset
 from nerf.provider_synthetic import NeRFDataset as SyntheticNeRFDataset
 
-# fixing seed and print setup for distributed environment
+# 시드 고정 함수 및 
 from nerf.utils import seed_everything, setup_distributed_print
 
 # class for model train and inference
